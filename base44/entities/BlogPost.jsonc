@@ -1,0 +1,71 @@
+{
+  "name": "BlogPost",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Blog post title"
+    },
+    "slug": {
+      "type": "string",
+      "description": "URL-friendly slug"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Human Resources",
+        "Leadership",
+        "Business Consulting",
+        "DEI",
+        "Organizational Culture",
+        "Process Improvement"
+      ],
+      "description": "Post category"
+    },
+    "author": {
+      "type": "string",
+      "default": "First Choice National Consulting Group",
+      "description": "Post author"
+    },
+    "publish_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Publish date"
+    },
+    "excerpt": {
+      "type": "string",
+      "description": "Short excerpt for previews"
+    },
+    "featured_image_url": {
+      "type": "string",
+      "description": "Featured image URL"
+    },
+    "seo_title": {
+      "type": "string",
+      "description": "SEO title"
+    },
+    "meta_description": {
+      "type": "string",
+      "description": "Meta description for SEO"
+    },
+    "body": {
+      "type": "string",
+      "description": "Full blog post content in HTML"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Draft",
+        "Published"
+      ],
+      "default": "Draft",
+      "description": "Publication status"
+    }
+  },
+  "required": [
+    "title",
+    "slug",
+    "category",
+    "status"
+  ]
+}

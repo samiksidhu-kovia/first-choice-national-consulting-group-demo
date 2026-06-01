@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 20% 98%;
+    --foreground: 213 24% 16%;
+    --card: 40 20% 98%;
+    --card-foreground: 213 24% 16%;
+    --popover: 40 20% 98%;
+    --popover-foreground: 213 24% 16%;
+    --primary: 150 15% 62%;
+    --primary-foreground: 40 20% 98%;
+    --secondary: 40 13% 95%;
+    --secondary-foreground: 213 24% 16%;
+    --muted: 40 13% 95%;
+    --muted-foreground: 214 10% 52%;
+    --accent: 17 36% 72%;
+    --accent-foreground: 213 24% 16%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 33 16% 87%;
+    --input: 33 16% 87%;
+    --ring: 150 15% 62%;
+    --chart-1: 150 15% 62%;
+    --chart-2: 17 36% 72%;
+    --chart-3: 37 36% 54%;
+    --chart-4: 213 24% 16%;
+    --chart-5: 214 10% 52%;
+    --radius: 0.25rem;
+    --font-heading: 'Cormorant Garamond', Georgia, serif;
+    --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    --sidebar-background: 40 20% 98%;
+    --sidebar-foreground: 213 24% 16%;
+    --sidebar-primary: 150 15% 62%;
+    --sidebar-primary-foreground: 40 20% 98%;
+    --sidebar-accent: 40 13% 95%;
+    --sidebar-accent-foreground: 213 24% 16%;
+    --sidebar-border: 33 16% 87%;
+    --sidebar-ring: 150 15% 62%;
+
+    --sage: #8FAF9F;
+    --sage-light: #C8DDD5;
+    --sage-pale: #EEF4F1;
+    --blush: #D4A89A;
+    --blush-light: #EDD5CE;
+    --blush-pale: #FAF2EF;
+    --slate: #2D3748;
+    --slate-secondary: #4A5568;
+    --slate-muted: #718096;
+    --warm-white: #FAFAF8;
+    --warm-offwhite: #F5F4F0;
+    --warm-border: #E2DED8;
+    --gold: #B8975A;
+    --gold-pale: #E8D9B8;
+  }
+
+  .dark {
+    --background: 213 24% 10%;
+    --foreground: 40 20% 95%;
+    --card: 213 24% 12%;
+    --card-foreground: 40 20% 95%;
+    --popover: 213 24% 12%;
+    --popover-foreground: 40 20% 95%;
+    --primary: 150 15% 62%;
+    --primary-foreground: 213 24% 10%;
+    --secondary: 213 20% 18%;
+    --secondary-foreground: 40 20% 95%;
+    --muted: 213 20% 18%;
+    --muted-foreground: 214 10% 60%;
+    --accent: 17 36% 72%;
+    --accent-foreground: 213 24% 10%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 213 20% 22%;
+    --input: 213 20% 22%;
+    --ring: 150 15% 62%;
+    --chart-1: 150 20% 55%;
+    --chart-2: 17 40% 65%;
+    --chart-3: 37 40% 50%;
+    --chart-4: 40 20% 85%;
+    --chart-5: 214 15% 60%;
+    --sidebar-background: 213 24% 10%;
+    --sidebar-foreground: 40 20% 95%;
+    --sidebar-primary: 150 15% 62%;
+    --sidebar-primary-foreground: 213 24% 10%;
+    --sidebar-accent: 213 20% 18%;
+    --sidebar-accent-foreground: 40 20% 95%;
+    --sidebar-border: 213 20% 22%;
+    --sidebar-ring: 150 15% 62%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    line-height: 1.2;
+  }
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
