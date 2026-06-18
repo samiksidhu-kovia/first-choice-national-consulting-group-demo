@@ -46,7 +46,10 @@ export default function Footer() {
               </div>
               <div className="flex items-start gap-2">
                 <Phone className="w-4 h-4 mt-0.5 text-sage-light" />
-                <a href="tel:6786744499" className="hover:text-sage-light transition-colors">678-674-4499</a>
+                <div className="flex flex-col">
+                  <a href="tel:8006799764" className="hover:text-sage-light transition-colors">800-679-9764</a>
+                  <a href="tel:6786744499" className="hover:text-sage-light transition-colors">678-674-4499</a>
+                </div>
               </div>
               <div className="flex items-start gap-2">
                 <Clock className="w-4 h-4 mt-0.5 text-sage-light" />
@@ -54,7 +57,7 @@ export default function Footer() {
               </div>
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 text-sage-light" />
-                <span>Douglasville, GA 30135</span>
+                <span>Greater Atlanta Area, GA</span>
               </div>
             </div>
           </div>

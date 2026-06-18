@@ -15,9 +15,9 @@ const CALENDLY_URL = "https://calendly.com/carrie-129?embed_domain=www.fcncg.com
 
 const contactInfo = [
   { icon: Mail, label: "Email", value: "info@1stchoicenationalconsulting.com", href: "mailto:info@1stchoicenationalconsulting.com" },
-  { icon: Phone, label: "Phone", value: "678-674-4499", href: "tel:6786744499" },
+  { icon: Phone, label: "Phone", value: "800-679-9764", href: "tel:8006799764", value2: "678-674-4499", href2: "tel:6786744499" },
   { icon: Clock, label: "Hours", value: "Monday through Friday, 9 AM to 5 PM ET" },
-  { icon: MapPin, label: "Location", value: "Douglasville, GA 30135" },
+  { icon: MapPin, label: "Location", value: "Greater Atlanta Area, GA" },
   { icon: Globe, label: "Service Area", value: "Nationwide" },
 ];
 
@@ -72,7 +72,12 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="text-xs text-slate-muted uppercase tracking-wider mb-1">{item.label}</p>
-                      {item.href ? (
+                      {item.href2 ? (
+                        <div className="flex flex-col">
+                          <a href={item.href} className="text-slate font-medium hover:text-sage transition-colors text-[15px]">{item.value}</a>
+                          <a href={item.href2} className="text-slate font-medium hover:text-sage transition-colors text-[15px]">{item.value2}</a>
+                        </div>
+                      ) : item.href ? (
                         <a href={item.href} className="text-slate font-medium hover:text-sage transition-colors text-[15px]">{item.value}</a>
                       ) : (
                         <p className="text-slate font-medium text-[15px]">{item.value}</p>

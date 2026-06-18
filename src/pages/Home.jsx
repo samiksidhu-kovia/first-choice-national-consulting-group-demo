@@ -22,7 +22,7 @@ const credCards = [
   {
     icon: Globe,
     title: "Nationwide Service",
-    text: "Based in the Atlanta Metropolitan Area and serving organizations across the United States.",
+    text: "Based in the Greater Atlanta Area and serving organizations across the United States.",
   },
   {
     icon: Award,
