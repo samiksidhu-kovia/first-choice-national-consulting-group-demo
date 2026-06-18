@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import SEOHead from "@/components/shared/SEOHead";
 import PageHero from "@/components/shared/PageHero";
 import CTASection from "@/components/shared/CTASection";
-import { Briefcase, Users, Target, Heart, ArrowRight } from "lucide-react";
+import { Briefcase, Users, Target, Heart, Star, ArrowRight } from "lucide-react";
 
 const services = [
   {
@@ -31,6 +31,12 @@ const services = [
     title: "Diversity, Equity & Inclusion",
     text: "Assessments, audits, strategy, resource development, workshops, trainings, education, and inclusive culture planning.",
     path: "/services/dei",
+  },
+  {
+    icon: Star,
+    title: "Fractional C-Suite Recruitment",
+    text: "Identifying and placing fractional executives, interim C-suite leadership, Chief HR Officer support, and executive advisory engagements.",
+    path: "/services/fractional-c-suite",
   },
 ];
 

@@ -20,6 +20,7 @@ import BusinessConsulting from '@/pages/services/BusinessConsulting';
 import HumanResources from '@/pages/services/HumanResources';
 import LeadershipDevelopment from '@/pages/services/LeadershipDevelopment';
 import DEI from '@/pages/services/DEI';
+import FractionalCSuite from '@/pages/services/FractionalCSuite';
 import Work from '@/pages/Work';
 import Blog from '@/pages/Blog';
 import BlogPost from '@/pages/BlogPost';
@@ -72,6 +73,7 @@ const AuthenticatedApp = () => {
         <Route path="/services/human-resources" element={<HumanResources />} />
         <Route path="/services/leadership-development" element={<LeadershipDevelopment />} />
         <Route path="/services/dei" element={<DEI />} />
+        <Route path="/services/fractional-c-suite" element={<FractionalCSuite />} />
         <Route path="/work" element={<Work />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPost />} />

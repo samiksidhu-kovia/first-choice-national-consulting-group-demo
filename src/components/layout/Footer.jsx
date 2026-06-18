@@ -15,6 +15,7 @@ const footerLinks = {
     { label: "Human Resources", path: "/services/human-resources" },
     { label: "Leadership Development", path: "/services/leadership-development" },
     { label: "Diversity, Equity & Inclusion", path: "/services/dei" },
+    { label: "Fractional C-Suite Recruitment", path: "/services/fractional-c-suite" },
   ],
   Resources: [
     { label: "Blog", path: "/blog" },

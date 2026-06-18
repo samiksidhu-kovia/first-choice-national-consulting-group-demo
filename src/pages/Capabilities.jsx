@@ -21,12 +21,12 @@ export default function Capabilities() {
       <section className="bg-warm-white py-12">
         <div className="max-w-5xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row gap-6 items-start justify-center">
           <img
-            src="https://media.base44.com/images/public/6a1db9605bc09d43648fd22c/96911eac2_image.png"
+            src="https://media.base44.com/images/public/6a1db9605bc09d43648fd22c/cc2e11cca_image.png"
             alt="Capabilities Statement Page 1"
             className="w-full md:w-1/2 h-auto"
           />
           <img
-            src="https://media.base44.com/images/public/6a1db9605bc09d43648fd22c/db0d7fe76_image.png"
+            src="https://media.base44.com/images/public/6a1db9605bc09d43648fd22c/1b88e197b_image.png"
             alt="Capabilities Statement Page 2"
             className="w-full md:w-1/2 h-auto"
           />
