@@ -5,6 +5,7 @@ import PageHero from "@/components/shared/PageHero";
 import SectionHeading from "@/components/shared/SectionHeading";
 import CTASection from "@/components/shared/CTASection";
 import { Award } from "lucide-react";
+import MeetTheTeam from "@/components/about/MeetTheTeam";
 
 const whoWeServe = [
   "Growing businesses",
@@ -48,6 +49,8 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      <MeetTheTeam />
 
       <section className="py-20 lg:py-24 bg-warm-offwhite">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">

@@ -58,11 +58,11 @@ export default function Home() {
                 First Choice National Consulting Group partners with businesses, nonprofits, and government clients to strengthen human resources, leadership, operations, and workplace culture with strategies built around their people and goals.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link to="/contact">
+                <a href="https://calendly.com/carrie-129" target="_blank" rel="noopener noreferrer">
                   <Button className="bg-sage hover:bg-sage/90 text-white rounded-lg px-7 py-3 font-body text-[15px]">
                     Schedule a Consultation
                   </Button>
-                </Link>
+                </a>
                 <Link to="/services">
                   <Button variant="outline" className="border-warm-border text-slate hover:bg-warm-offwhite rounded-lg px-7 py-3 font-body text-[15px]">
                     Explore Services

@@ -7,7 +7,7 @@ export default function CTASection({
   headline = "Ready for a clearer path forward?", 
   text = "Schedule a consultation to discuss your organization's goals, challenges, and next steps.", 
   buttonText = "Schedule a Consultation",
-  buttonLink = "/contact",
+  buttonLink = "https://calendly.com/carrie-129",
   variant = "blush"
 }) {
   const bgClass = variant === "blush" ? "bg-blush-pale" : variant === "sage" ? "bg-sage-pale" : "bg-warm-offwhite";
@@ -24,11 +24,11 @@ export default function CTASection({
         >
           <h2 className="font-heading text-3xl md:text-4xl font-medium text-slate mb-4">{headline}</h2>
           <p className="text-slate-secondary mb-8 text-[17px] leading-relaxed">{text}</p>
-          <Link to={buttonLink}>
+          <a href={buttonLink} target="_blank" rel="noopener noreferrer">
             <Button className="bg-sage hover:bg-sage/90 text-white rounded-lg px-8 py-3 font-body text-[15px]">
               {buttonText}
             </Button>
-          </Link>
+          </a>
         </motion.div>
       </div>
     </section>
