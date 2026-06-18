@@ -19,6 +19,9 @@ const footerLinks = {
   Resources: [
     { label: "Blog", path: "/blog" },
     { label: "Services Overview", path: "/services" },
+    { label: "Privacy Policy", path: "/privacy-policy" },
+    { label: "Terms & Conditions", path: "/terms-and-conditions" },
+    { label: "Service Agreement", path: "/service-agreement" },
   ],
 };
 

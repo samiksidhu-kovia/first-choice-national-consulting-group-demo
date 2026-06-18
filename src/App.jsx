@@ -24,6 +24,9 @@ import Work from '@/pages/Work';
 import Blog from '@/pages/Blog';
 import BlogPost from '@/pages/BlogPost';
 import Contact from '@/pages/Contact';
+import PrivacyPolicy from '@/pages/PrivacyPolicy';
+import TermsAndConditions from '@/pages/TermsAndConditions';
+import ServiceAgreement from '@/pages/ServiceAgreement';
 
 // Auth pages
 import Login from '@/pages/Login';
@@ -73,6 +76,9 @@ const AuthenticatedApp = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="/service-agreement" element={<ServiceAgreement />} />
       </Route>
 
       <Route path="*" element={<PageNotFound />} />
